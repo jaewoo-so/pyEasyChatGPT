@@ -1,12 +1,12 @@
-# pyChatGPT
+# pyEasyChatGPT
 
-[![PyPi](https://img.shields.io/pypi/v/pyChatGPT.svg)](https://pypi.python.org/pypi/pyChatGPT)
-[![License](https://img.shields.io/github/license/terry3041/pyChatGPT.svg?color=green)](https://github.com/terry3041/pyChatGPT/blob/main/LICENSE)
+[![PyPi](https://img.shields.io/pypi/v/pyEasyChatGPT.svg)](https://pypi.python.org/pypi/pyEasyChatGPT)
+[![License](https://img.shields.io/github/license/terry3041/pyEasyChatGPT.svg?color=green)](https://github.com/terry3041/pyEasyChatGPT/blob/main/LICENSE)
 ![PyPi](https://img.shields.io/badge/code_style-black+flake8-blue.svg)
 
 > Currently busy with IRL stuff, expect slow or even ceased development. If you want to contribute, feel free to open a PR. If you want an actively maintained API wrapper, consider using [acheong08/ChatGPT](https://github.com/acheong08/ChatGPT) with a leaked official API.
 
-> original repo "https://github.com/terry3041/pyChatGPT"
+> original repo "https://github.com/terry3041/pyEasyChatGPT"
 
 An unofficial Python wrapper for OpenAI's ChatGPT API.
 The original repo is no longer maintained, so I made it here to manage and develop.
@@ -44,13 +44,13 @@ pip install -U pyEasyChatGPT
 #### Interactive mode
 
 ```bash
-python3 -m pyChatGPT
+python3 -m pyEasyChatGPT
 ```
 
 #### Import as a module
 
 ```python
-from pyChatGPT import ChatGPT
+from pyEasyChatGPT import ChatGPT
 
 session_token = 'abc123'  # `__Secure-next-auth.session-token` cookie from https://chat.openai.com/chat
 api = ChatGPT(session_token)  # auth with session token
@@ -108,7 +108,7 @@ It is normal for the seession to be crashed when installing dependencies. Just i
 ```python
 # install dependencies
 !apt install chromium-browser xvfb
-!pip install -U selenium_profiles pyChatGPT
+!pip install -U selenium_profiles pyEasyChatGPT
 
 # install chromedriver
 from selenium_profiles.utils.installer import install_chromedriver
@@ -117,7 +117,7 @@ install_chromedriver()
 
 ```python
 # start your script as normal
-!python3 -m pyChatGPT
+!python3 -m pyEasyChatGPT
 ```
 
 ## Insipration

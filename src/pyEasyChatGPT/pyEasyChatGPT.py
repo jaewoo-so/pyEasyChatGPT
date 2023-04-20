@@ -143,7 +143,7 @@ class ChatGPT:
         Initialize the logger\n
         :param verbose: Whether to enable verbose logging
         '''
-        self.logger = logging.getLogger('pyChatGPT')
+        self.logger = logging.getLogger('pyEasyChatGPT')
         self.logger.setLevel(logging.DEBUG)
         if verbose:
             formatter = logging.Formatter('[%(funcName)s] %(message)s')
