@@ -6,8 +6,11 @@
 
 > Currently busy with IRL stuff, expect slow or even ceased development. If you want to contribute, feel free to open a PR. If you want an actively maintained API wrapper, consider using [acheong08/ChatGPT](https://github.com/acheong08/ChatGPT) with a leaked official API.
 
-An unofficial Python wrapper for OpenAI's ChatGPT API
+> original repo "https://github.com/terry3041/pyChatGPT"
 
+An unofficial Python wrapper for OpenAI's ChatGPT API.
+The original repo is no longer maintained, so I made it here to manage and develop.
+A new Chat function has been added for ChatGPT Plus users to input a large amount.
 ## Features
 
 -   [x] Cloudflare's anti-bot protection bypass using `undetected_chromedriver`
@@ -15,6 +18,8 @@ An unofficial Python wrapper for OpenAI's ChatGPT API
 -   [x] Captcha solvers support (2Captcha, PyPasser)
 -   [x] [Headless machines support](#how-do-i-get-it-to-work-on-headless-linux-server)
 -   [x] Proxy support (only without basic auth)
+-   [x] Large amount of chat (only ChatGPT Plus user)
+-   [x] Removed features that are not available in the original repo
 
 ## Getting Started
 
@@ -23,7 +28,7 @@ An unofficial Python wrapper for OpenAI's ChatGPT API
 ### Installation
 
 ```bash
-pip install -U pyChatGPT
+pip install -U pyEasyChatGPT
 ```
 
 ### Usage
@@ -81,9 +86,7 @@ api = ChatGPT(auth_type='openai', email='example@xxx.com', password='password',
 resp = api.send_message('Hello, world!')
 print(resp['message'])
 
-api.reset_conversation()  # reset the conversation
-api.clear_conversations()  # clear all conversations
-api.refresh_chat_page()  # refresh the chat page
+api.new_chat()  # reset the conversation
 ```
 
 ## Frequently Asked Questions
