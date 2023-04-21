@@ -1,4 +1,4 @@
-from pyChatGPT import ChatGPT
+from pyEasyChatGPT import ChatGPT
 import os
 
 

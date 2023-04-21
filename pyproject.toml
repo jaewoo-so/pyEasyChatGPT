@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pyEasyChatGPT"
-version = "0.5.3.3"
+version = "0.1.1"
 authors = [
     { name="jaewoo-so", email="nchos88@gmail.com" },
 ]
